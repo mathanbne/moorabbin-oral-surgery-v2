@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Award, Globe, Microscope, Heart } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
@@ -94,19 +95,30 @@ export default function AboutPage() {
             <h2 className="mt-2 text-3xl font-bold text-sky-900 mb-8">
               Dr Balanand Subramanian
             </h2>
-            <div className="flex gap-4 mb-6 flex-wrap">
-              <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">
-                Specialist Oral Surgeon
-              </span>
-              <span className="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-xs font-semibold">
-                AHPRA Registered
-              </span>
-              <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">
-                Hindi & Tamil
-              </span>
-              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">
-                10+ Years Experience
-              </span>
+            <div className="flex flex-col sm:flex-row gap-8 items-start mb-8">
+              <div className="shrink-0">
+                <Image
+                  src="/bala.jpeg"
+                  alt="Dr Balanand Subramanian - Specialist Oral Surgeon"
+                  width={200}
+                  height={240}
+                  className="rounded-2xl object-cover shadow-md"
+                />
+              </div>
+              <div className="flex gap-4 flex-wrap content-start">
+                <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">
+                  Specialist Oral Surgeon
+                </span>
+                <span className="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-xs font-semibold">
+                  AHPRA Registered
+                </span>
+                <span className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">
+                  Hindi & Tamil
+                </span>
+                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">
+                  10+ Years Experience
+                </span>
+              </div>
             </div>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
