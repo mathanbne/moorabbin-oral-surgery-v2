@@ -23,8 +23,8 @@ export default function AboutPage() {
               About Us
             </h1>
             <p className="mt-4 text-sky-100 text-lg leading-relaxed">
-              Two decades of trusted specialist oral surgery in the heart of
-              the Bayside community.
+              Providing top-notch oral surgery care to the Bayside community,
+              south eastern suburbs and western suburbs for over two decades.
             </p>
           </div>
         </div>
@@ -43,24 +43,19 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Moorabbin Oral Surgery has been a trusted specialist oral
-                  surgery practice in the Bayside community for more than two
-                  decades. We have helped thousands of patients across Moorabbin
-                  and the surrounding area access high-quality specialist care
-                  close to home.
+                  At Moorabbin Oral Surgery, we&apos;ve been providing top-notch oral surgery care
+                  to the Bayside community, south eastern suburbs and western suburbs for over
+                  two decades. Our experienced surgeons are dedicated to making your procedure
+                  as comfortable and stress-free as possible.
                 </p>
                 <p>
-                  Our practice is built on three core values: clinical
-                  excellence, genuine patient care, and honest communication. We
-                  believe every patient deserves to be fully informed about their
-                  treatment options and to feel at ease throughout their care
-                  journey.
+                  What sets us apart? Our commitment to personalised care, state-of-the-art
+                  techniques, and a focus on long-lasting results. Whether you need wisdom
+                  teeth removal, dental implants, or TMJ treatment, we&apos;re here to help.
                 </p>
                 <p>
-                  We accept referrals from local dentists and also welcome
-                  self-referrals. Our free initial consultation allows us to
-                  thoroughly assess your needs and provide a clear treatment plan
-                  without any obligation.
+                  Ready to take the next step? Schedule a consultation today and experience
+                  the Moorabbin Oral Surgery difference.
                 </p>
               </div>
             </div>
