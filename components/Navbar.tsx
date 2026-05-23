@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -30,18 +31,15 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
-            <div className="leading-tight">
-              <div className="font-bold text-sky-900 text-sm leading-none">
-                Moorabbin
-              </div>
-              <div className="text-cyan-600 text-xs font-medium">
-                Oral Surgery
-              </div>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt="Moorabbin Oral Surgery"
+              width={160}
+              height={56}
+              className="h-14 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop links */}
