@@ -32,15 +32,16 @@ export default function Hero() {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
-            Specialist Oral Surgery
-            <span className="block text-cyan-300 mt-1">in Moorabbin</span>
+            Welcome to
+            <span className="block text-cyan-300 mt-1">Moorabbin Oral Surgery</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-sky-100 leading-relaxed mb-8 max-w-xl animate-fade-in-up animate-delay-100">
-            Serving the Bayside community for over 20 years. Expert care for
-            wisdom teeth, dental implants, and complex oral surgery — with free
-            initial consultations.
+            At Moorabbin Oral Surgery, we&apos;ve been providing top-notch oral surgery care
+            to the Bayside community, south eastern suburbs and western suburbs for over
+            two decades. Our experienced surgeons are dedicated to making your procedure
+            as comfortable and stress-free as possible.
           </p>
 
           {/* CTAs */}
@@ -50,7 +51,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center gap-2 bg-white text-sky-900 px-8 py-3.5 rounded-full font-semibold text-base hover:bg-cyan-50 transition-colors shadow-lg"
             >
               <Calendar size={18} />
-              Book Free Consultation
+              Schedule a Consultation
             </Link>
             <Link
               href="/services"
@@ -64,8 +65,8 @@ export default function Hero() {
           <div className="flex flex-wrap gap-8 animate-fade-in-up animate-delay-300">
             {[
               { value: "20+", label: "Years Experience" },
-              { value: "4.6★", label: "Patient Rating" },
-              { value: "Free", label: "Initial Consultations" },
+              { value: "Personalised", label: "Care" },
+              { value: "Long-Lasting", label: "Results" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-white">{stat.value}</div>
