@@ -4,6 +4,7 @@ import { SmilePlus, Wrench, Sparkles, Zap } from "lucide-react";
 const services = [
   {
     icon: SmilePlus,
+    image: "https://images.unsplash.com/photo-1588776814546-1ffbb319adf4?w=800&h=400&fit=crop",
     title: "Wisdom Teeth Removal",
     description:
       "Safe and comfortable extraction of impacted or problematic wisdom teeth, preventing future dental complications.",
@@ -12,6 +13,7 @@ const services = [
   },
   {
     icon: Sparkles,
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=400&fit=crop",
     title: "Dental Implants",
     description:
       "Permanent tooth replacement solutions using advanced implant technology for a natural look and lasting function.",
@@ -20,6 +22,7 @@ const services = [
   },
   {
     icon: Zap,
+    image: "https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=800&h=400&fit=crop",
     title: "All-on-X",
     description:
       "Full-arch restoration with as few as four implants — a life-changing solution for patients with significant tooth loss.",
@@ -28,6 +31,7 @@ const services = [
   },
   {
     icon: Wrench,
+    image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&h=400&fit=crop",
     title: "Surgical Extractions",
     description:
       "Expert removal of damaged, broken, or impacted teeth with minimal discomfort and fast recovery.",
@@ -60,25 +64,32 @@ export default function ServicesGrid() {
             return (
               <div
                 key={service.title}
-                className="group bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:border-cyan-100 transition-all duration-300 flex flex-col"
+                className="group bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg hover:border-cyan-100 transition-all duration-300 flex flex-col"
               >
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${service.color}`}
-                >
-                  <Icon size={22} />
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-40 object-cover"
+                />
+                <div className="p-6 flex flex-col flex-1">
+                  <div
+                    className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${service.color}`}
+                  >
+                    <Icon size={22} />
+                  </div>
+                  <h3 className="font-semibold text-sky-900 text-lg mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-1">
+                    {service.description}
+                  </p>
+                  <Link
+                    href={service.href}
+                    className="mt-5 text-cyan-600 text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+                  >
+                    Learn more →
+                  </Link>
                 </div>
-                <h3 className="font-semibold text-sky-900 text-lg mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed flex-1">
-                  {service.description}
-                </p>
-                <Link
-                  href={service.href}
-                  className="mt-5 text-cyan-600 text-sm font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                >
-                  Learn more →
-                </Link>
               </div>
             );
           })}

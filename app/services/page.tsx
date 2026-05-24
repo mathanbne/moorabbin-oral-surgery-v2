@@ -13,6 +13,7 @@ const services = [
   {
     id: "wisdom-teeth",
     icon: SmilePlus,
+    image: "https://images.unsplash.com/photo-1588776814546-1ffbb319adf4?w=800&h=500&fit=crop",
     title: "Wisdom Teeth Removal",
     description:
       "Wisdom teeth, also known as third molars, are the last teeth to erupt in your mouth. They usually appear between ages 18 and 24, but can become impacted due to lack of space in your jaw, causing pain, infection, and damage to adjacent teeth.",
@@ -26,6 +27,7 @@ const services = [
   {
     id: "implants",
     icon: Sparkles,
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=500&fit=crop",
     title: "Dental Implants",
     description:
       "Are you missing teeth and looking for a solution that feels and looks like your natural teeth? Dental implants are placed in two stages: our surgeons carefully place a titanium implant into your jawbone, then your dentist attaches a crown or bridge to restore your smile and function.",
@@ -39,6 +41,7 @@ const services = [
   {
     id: "all-on-four",
     icon: Zap,
+    image: "https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=800&h=500&fit=crop",
     title: "All-on-Four Dental Implants",
     description:
       "Are you missing multiple teeth and looking for a reliable, long-lasting solution? With All-on-Four, we strategically place four dental implants in your jawbone that securely support a full arch of replacement teeth, giving you a natural-looking and functional smile.",
@@ -52,6 +55,7 @@ const services = [
   {
     id: "extractions",
     icon: Wrench,
+    image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&h=500&fit=crop",
     title: "General Tooth Extraction",
     description:
       "Sometimes complex tooth anatomy, medical conditions, or medications can make tooth extraction a more involved procedure. Our experienced surgeons carefully assess your situation and recommend the best approach, with a choice of general or local anaesthesia for your comfort.",
@@ -65,6 +69,7 @@ const services = [
   {
     id: "bone-grafting",
     icon: Layers,
+    image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800&h=500&fit=crop",
     title: "Bone Grafting",
     description:
       "If you're missing teeth and have experienced bone loss in your jaw, bone grafting may be necessary before dental implant placement. Bone grafting adds bone material to your jawbone to create a suitable environment for implants and improve treatment success.",
@@ -78,6 +83,7 @@ const services = [
   {
     id: "impacted-teeth",
     icon: Zap,
+    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=500&fit=crop",
     title: "Exposure of Impacted Teeth",
     description:
       "Impacted teeth can become misaligned, affecting your smile and oral function. We surgically uncover a partially or fully buried tooth to allow it to erupt naturally, typically followed by orthodontic treatment to guide the tooth into its proper position.",
@@ -91,6 +97,7 @@ const services = [
   {
     id: "oral-pathology",
     icon: Search,
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=500&fit=crop",
     title: "Oral Pathology",
     description:
       "Your oral health is a vital part of your overall well-being. Oral pathology is the study of diseases affecting the mouth and surrounding tissues. Early detection of oral diseases can help prevent serious complications, including cancer, infections, and functional impairments.",
@@ -138,15 +145,19 @@ export default function ServicesPage() {
                   idx % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
               >
-                {/* Icon panel */}
+                {/* Image panel */}
                 <div className="lg:w-1/3 flex-shrink-0">
-                  <div className="bg-[#ecfeff] rounded-2xl p-10 text-center">
-                    <div className="w-16 h-16 bg-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                      <Icon size={28} className="text-white" />
+                  <div className="relative rounded-2xl overflow-hidden">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="absolute bottom-4 left-4">
+                      <div className="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <Icon size={22} className="text-white" />
+                      </div>
                     </div>
-                    <h2 className="text-xl font-bold text-sky-900">
-                      {service.title}
-                    </h2>
                   </div>
                 </div>
 
