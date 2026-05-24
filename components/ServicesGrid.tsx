@@ -4,7 +4,7 @@ import { SmilePlus, Wrench, Sparkles, Zap } from "lucide-react";
 const services = [
   {
     icon: SmilePlus,
-    image: "https://images.unsplash.com/photo-1588776814546-1ffbb319adf4?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=400&fit=crop",
     title: "Wisdom Teeth Removal",
     description:
       "Safe and comfortable extraction of impacted or problematic wisdom teeth, preventing future dental complications.",
@@ -22,7 +22,7 @@ const services = [
   },
   {
     icon: Zap,
-    image: "https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=800&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&h=400&fit=crop",
     title: "All-on-X",
     description:
       "Full-arch restoration with as few as four implants — a life-changing solution for patients with significant tooth loss.",

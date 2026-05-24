@@ -13,7 +13,7 @@ const services = [
   {
     id: "wisdom-teeth",
     icon: SmilePlus,
-    image: "https://images.unsplash.com/photo-1588776814546-1ffbb319adf4?w=800&h=500&fit=crop",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=500&fit=crop",
     title: "Wisdom Teeth Removal",
     description:
       "Wisdom teeth, also known as third molars, are the last teeth to erupt in your mouth. They usually appear between ages 18 and 24, but can become impacted due to lack of space in your jaw, causing pain, infection, and damage to adjacent teeth.",
@@ -41,7 +41,7 @@ const services = [
   {
     id: "all-on-four",
     icon: Zap,
-    image: "https://images.unsplash.com/photo-1629909615957-be38d48fbbe4?w=800&h=500&fit=crop",
+    image: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&h=500&fit=crop",
     title: "All-on-Four Dental Implants",
     description:
       "Are you missing multiple teeth and looking for a reliable, long-lasting solution? With All-on-Four, we strategically place four dental implants in your jawbone that securely support a full arch of replacement teeth, giving you a natural-looking and functional smile.",
